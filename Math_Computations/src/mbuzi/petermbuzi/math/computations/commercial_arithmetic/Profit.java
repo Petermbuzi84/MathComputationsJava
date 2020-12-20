@@ -18,4 +18,13 @@ public class Profit {
         double profit = selling_price - buying_price;
         return (100 * profit) / buying_price;
     }
+
+    public double perProfitRemoveDiscountSellingPricePerDiscountPerProfit(double selling_price, double percentage_discount, double percentage_profit) {
+        MarkedPrice mp = new MarkedPrice();
+        double marked_price = mp.markedPriceSellingPricePerDiscount(selling_price, percentage_discount);
+        BuyingPrice bp = new BuyingPrice();
+        double buying_price = bp.buyingPriceSellingPricePerProfit(selling_price, percentage_profit);
+        Profit p = new Profit();
+        return p.perProfitBuyingSellingPrice(buying_price, marked_price);
+    }
 }
