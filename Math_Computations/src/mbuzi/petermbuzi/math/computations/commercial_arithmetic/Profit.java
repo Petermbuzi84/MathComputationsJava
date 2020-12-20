@@ -1,4 +1,4 @@
-package mbuzi.petermbuzi.math.computations;
+package mbuzi.petermbuzi.math.computations.commercial_arithmetic;
 
 public class Profit {
 
