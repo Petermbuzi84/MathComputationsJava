@@ -1,0 +1,2 @@
+#Math Computations
+Simple mathematical calculations are made easier by applying mathematics formulas and feeding the formulas to the computer and then later feeding math problems for the computer to solve using the given formulas
