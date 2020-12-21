@@ -24,7 +24,6 @@ public class Profit {
         double marked_price = mp.markedPriceSellingPricePerDiscount(selling_price, percentage_discount);
         BuyingPrice bp = new BuyingPrice();
         double buying_price = bp.buyingPriceSellingPricePerProfit(selling_price, percentage_profit);
-        Profit p = new Profit();
-        return p.perProfitBuyingSellingPrice(buying_price, marked_price);
+        return perProfitBuyingSellingPrice(buying_price, marked_price);
     }
 }
